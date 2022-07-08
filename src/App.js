@@ -10,11 +10,14 @@ import List from './components/List'
 import Edit from './components/Edit';
 import Nav from './components/Nav';
 import Start from './components/Start';
+import popup from './components/popup';
+
 
 
 function App() {
   return (
     <BrowserRouter>
+        <div className="background"></div>
       <div className="App">
           <Nav />
           <Start/>
