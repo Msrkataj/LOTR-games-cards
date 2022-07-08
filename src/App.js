@@ -10,23 +10,27 @@ import List from './components/List'
 import Edit from './components/Edit';
 import Nav from './components/Nav';
 import Start from './components/Start';
-import popup from './components/popup';
+import Center from './components/Center';
 
 
 
 function App() {
   return (
+      <>
     <BrowserRouter>
-        <div className="background"></div>
+        <div className="background">
+        </div>
       <div className="App">
           <Nav />
           <Start/>
-          <Routes>
-            <Route exact path="/" element={<List />} />
-            <Route exact path="/edit/:id" element={<Edit />} />
-          </Routes>
+          <Center/>
+          {/*<Routes>*/}
+          {/*  <Route exact path="/" element={<List />} />*/}
+          {/*  <Route exact path="/edit/:id" element={<Edit />} />*/}
+          {/*</Routes>*/}
       </div>
     </BrowserRouter>
+      </>
   );
 }
 

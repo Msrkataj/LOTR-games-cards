@@ -1,0 +1,63 @@
+.logo-section {
+  display: flex;
+  justify-content: flex-end;
+  .logo {
+    background-image: url("../assets/LOTR cards.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: 10px;
+
+  }
+}
+@keyframes pulse {
+  from {
+    border: 3px solid #092EE6;
+  }
+  to {
+    border: 3px solid cornflowerblue;
+  }
+}
+
+.center-up {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .center-up-statistic {
+    width: 270px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 40px;
+    background: none;
+    backdrop-filter: blur(4px);
+    filter: brightness(15);
+    h1 {
+      margin: 5px;
+    }
+    .center-up-statistic-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .center-up-mainCard {
+    width: 100px;
+    height: 170px;
+    border: 3px solid black;
+    border-radius: 40px;
+    background-image: url("../assets/Ring card.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    animation: pulse 2s infinite alternate;
+    cursor: pointer;
+  }
+
+  .center-up-mainCard:hover {
+    transform: scale(1.2);
+  }
+}
+
+
