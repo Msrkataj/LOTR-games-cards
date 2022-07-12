@@ -1,6 +1,7 @@
 .logo-section {
   display: flex;
   justify-content: flex-end;
+
   .logo {
     background-image: url("../assets/LOTR cards.png");
     width: 100px;
@@ -10,6 +11,7 @@
 
   }
 }
+
 @keyframes pulse {
   from {
     border: 3px solid #092EE6;
@@ -25,26 +27,56 @@
   align-items: center;
 
   .center-up-statistic {
-    width: 270px;
-    height: 200px;
+    width: 50vw;
+    height: 15vh;
     border: 3px solid black;
     border-radius: 40px;
     background: none;
-    backdrop-filter: blur(4px);
-    filter: brightness(15);
+    backdrop-filter: blur(10px);
+    filter: brightness(125%);
+    padding-top: 8px;
+    font-size: 1.2rem;
+    @include tablet {
+      width: 30vw;
+    }
+    @include notebook {
+      width: 25vw;
+      height: 20vh;
+    }
+    @include ultra {
+      width: 20vw;
+    }
+
     h1 {
       margin: 5px;
+      font-size: 1.5rem;
     }
+
     .center-up-statistic-main {
       display: flex;
-      flex-direction: column;
+      margin: 0 20px;
+      justify-content: space-between;
       align-items: center;
+
+      .stats ul li {
+        margin-top: 0.7vh;
+        @include notebook {
+          margin-top: 1.4vh;
+        }
+      }
+      .draw {
+        background-image: url("../assets/shuffle-solid.svg");
+        width: 100px;
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
   .center-up-mainCard {
-    width: 100px;
-    height: 170px;
+    width: 10vw;
+    height: 11vh;
     border: 3px solid black;
     border-radius: 40px;
     background-image: url("../assets/Ring card.jpg");
@@ -53,10 +85,113 @@
     transition: 0.5s;
     animation: pulse 2s infinite alternate;
     cursor: pointer;
+    @include notebook {
+      width: 20vw;
+      height: 40vh;
+      justify-content: center;
+      position: absolute;
+      top: 580px;
+      background-image: url("../assets/Ring card.jpg");
+    }
+    @include ultra {
+
+    }
   }
 
   .center-up-mainCard:hover {
     transform: scale(1.2);
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    margin: 300px 0;
+  }
+  @include notebook {
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 60vw;
+    height: 20vh;
+    border: 3px solid black;
+    border-radius: 40px;
+    background: none;
+    position: relative;
+    @include tablet {
+      transform: rotate(90deg);
+      height: 30vh;
+    }
+    @include notebook {
+      width: 40vw;
+      height: 30vh;
+    }
+    @include ultra {
+      width: 30vw;
+      height: 30vh;
+    }
+  }
+  .first-card {
+    margin-bottom: 100px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  .second-card {
+    background: none;
+  }
+}
+
+.card-points {
+  width: 10vw;
+  height: 12vh;
+  border-radius: 50px;
+  border: 3px solid #092EE6;
+  position: absolute;
+  background-image: url("../assets/Ring card.jpg");
+  background-size: cover;
+  background-position: center;
+  left: 500px;
+  top: 200px;
+
+  @include tablet {
+    width: 16vw;
+    height: 8vh;
+    background-image: url("../assets/Ring card-poz.jpg");
+  }
+  @include notebook {
+    width: 13vh;
+    height: 8vh;
+    background-image: url("../assets/Ring card-poz.jpg");
+  }
+}
+
+.card-points-first {
+  @include tablet {
+    left: 500px;
+    top: -50px;
+  }
+}
+
+.card-points-second {
+  @include tablet {
+    left: 500px;
+    top: 400px;
+  }
+}
+
+.card-points-first .card-points-second {
+  @include notebook {
+    left: 450px;
+    top: -50px;
   }
 }
 

@@ -24,16 +24,21 @@ const Center = () => {
                     </ul>
                 </div>
                 <div className="draw">
+                    <i className="fa-solid fa-shuffle"></i>
                 </div>
             </div>
         </div>
         <div className="center-up-mainCard">
         </div>
     </div>
-        <div className="center-first-card">
+            <div className="content">
+        <div className="card first-card">
+            <div className="card-points card-points-first"></div>
         </div>
-        <div className="center-second-card">
+        <div className="card second-card">
+            <div className="card-points card-points-second"></div>
         </div>
+            </div>
 
         </>
 
