@@ -4,11 +4,15 @@
 
   .logo {
     background-image: url("../assets/LOTR cards.png");
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-size: cover;
     margin: 10px;
-
+    position: absolute;
+    @include notebook {
+      width: 200px;
+      height: 200px;
+    }
   }
 }
 
@@ -21,35 +25,67 @@
   }
 }
 
+@keyframes pulseRed {
+  from {
+    border: 3px solid red;
+  }
+  to {
+    border: 3px solid darkred;
+  }
+}
+
 .center-up {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 100px;
+
+  @include notebook {
+    justify-content: center;
+  }
 
   .center-up-statistic {
     width: 50vw;
-    height: 15vh;
+    height: 17vh;
     border: 3px solid black;
     border-radius: 40px;
     background: none;
     backdrop-filter: blur(10px);
     filter: brightness(125%);
     padding-top: 8px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile-plus {
+      font-size: 1.2rem;
+    }
+
+    @include height-mini {
+      font-size: 0.8rem;
+      height: 20vh;
+    }
     @include tablet {
       width: 30vw;
     }
+
     @include notebook {
       width: 25vw;
       height: 20vh;
+      margin-right: 100px;
     }
     @include ultra {
-      width: 20vw;
+      width: 15vw;
     }
-
+    //@include height-small {
+    //  height: 190px;
+    //}
     h1 {
       margin: 5px;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
+      @include mobile-plus {
+        font-size: 1.8rem;
+      }
     }
 
     .center-up-statistic-main {
@@ -57,6 +93,7 @@
       margin: 0 20px;
       justify-content: space-between;
       align-items: center;
+      font-size: 1.5vh;
 
       .stats ul li {
         margin-top: 0.7vh;
@@ -66,17 +103,58 @@
       }
       .draw {
         background-image: url("../assets/shuffle-solid.svg");
-        width: 100px;
-        height: 80px;
+        width: 50px;
+        height: 40px;
         background-size: cover;
         background-position: center;
+        cursor: pointer;
+
+        @include mobile-plus {
+          width: 100px;
+          height: 80px;
+          }
+        @include height-small {
+          width: 50px;
+          height: 40px;
+        }
+        }
       }
     }
   }
 
+.fight {
+  width: 15vw;
+  height: 16vh;
+  border: 3px solid black;
+  border-radius: 40px;
+  background-image: url("../assets/battle.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  animation: pulseRed 2s infinite alternate;
+  position: relative;
+  transition: 0.5s;
+
+    p {
+      transition: 0s;
+      position: absolute;
+      left: 22%;
+      top: 50%;
+      font-family: ringbearermedium;
+      font-weight: bold;
+      font-size: 2vw;
+      color: #eeeeee;
+    }
+  }
+
+
+.fight:hover {
+  transform: scale(1.2);
+}
+
   .center-up-mainCard {
-    width: 10vw;
-    height: 11vh;
+    width: 15vw;
+    height: 16vh;
     border: 3px solid black;
     border-radius: 40px;
     background-image: url("../assets/Ring card.jpg");
@@ -85,6 +163,24 @@
     transition: 0.5s;
     animation: pulse 2s infinite alternate;
     cursor: pointer;
+    position: relative;
+    p {
+      position: absolute;
+      left: 30%;
+      top: 45%;
+      font-family: ringbearermedium;
+      font-weight: bold;
+      font-size: 2vw;
+      color: #eeeeee;
+      @include notebook {
+        left: 35%;
+      }
+      @include ultra {
+        left: 35%;
+      }
+    }
+
+
     @include notebook {
       width: 20vw;
       height: 40vh;
@@ -94,60 +190,91 @@
       background-image: url("../assets/Ring card.jpg");
     }
     @include ultra {
-
+      width: 400px;
+      height: 700px;
     }
-  }
+    @include ultra-small-height {
+      width: 20vw;
+      height: 40vh;
+    }
 
-  .center-up-mainCard:hover {
-    transform: scale(1.2);
+    @include height-small-max {
+      width: 15vw;
+      height: 20vh;
   }
+    @include tablet-small-height {
+      top: 40%
+    }
+}
+.center-up-mainCard:hover {
+  transform: scale(1.2);
+
 }
 
 .content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 100px 0;
+  margin: 10px 50px;
 
   @include tablet {
     display: flex;
     flex-direction: row;
-    margin: 300px 0;
+    justify-content: space-around;
+    margin: 200px 50px;
   }
+
+  @include tablet-small-height {
+    margin: 100px 50px;
+  }
+
+  @include height-mini-plus-max {
+    margin: 50px 50px;
+  }
+
+
   @include notebook {
     justify-content: space-between;
+    margin: 100px 100px;
+
   }
+
 
   .card {
     width: 60vw;
     height: 20vh;
     border: 3px solid black;
     border-radius: 40px;
-    background: none;
     position: relative;
+    background: url("../assets/ring2");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
     @include tablet {
-      transform: rotate(90deg);
-      height: 30vh;
+      width: 35vw;
+      height: 45vh;
     }
+
     @include notebook {
-      width: 40vw;
-      height: 30vh;
+      width: 25vw;
+      height: 50vh;
     }
-    @include ultra {
-      width: 30vw;
-      height: 30vh;
-    }
+
+
+    //@include ultra {
+    //  max-width: 600px;
+    //  height: 450px;
+    //}
   }
   .first-card {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     @include tablet {
       margin-bottom: 0;
     }
   }
 
-  .second-card {
-    background: none;
-  }
+
 }
 
 .card-points {
@@ -159,40 +286,127 @@
   background-image: url("../assets/Ring card.jpg");
   background-size: cover;
   background-position: center;
-  left: 500px;
-  top: 200px;
+  left: 90%;
+  top: 50%;
+  z-index: 2;
+  .sum {
+    width: 15%;
+    height: 15%;
+    top: 20%;
+    left: 30%;
+    font-size: 3vh;
+    position: absolute;
+    color: #eeeeee;
+    z-index: 6;
+  }
+  p {
+    font-family: ringbearermedium;
+    top: 35%;
+    left: 30%;
+    font-size: 4vh;
+    position: absolute;
+    color: #eeeeee;
+    @include mobile-plus {
+      left: 40%;
+    }
+    @include tablet {
+      left: 40%;
+    }
+    @include notebook {
+      top: 40%;
+      left: 40%;
+    }
+    @include ultra {
+      top: 37%;
+      left: 37%;
+    }
+  }
 
   @include tablet {
-    width: 16vw;
-    height: 8vh;
-    background-image: url("../assets/Ring card-poz.jpg");
+    width: 8vw;
+    height: 14vh;
+    background-image: url("../assets/Ring card.jpg");
   }
   @include notebook {
-    width: 13vh;
-    height: 8vh;
-    background-image: url("../assets/Ring card-poz.jpg");
+    width: 10vh;
+    height: 16vh;
+    background-image: url("../assets/Ring card.jpg");
   }
 }
 
 .card-points-first {
   @include tablet {
-    left: 500px;
-    top: -50px;
+    left: 80%;
+    top: 80%;
+  }
+  @include tablet-small-height {
+    left: 85%;
+  }
+  @include notebook {
+    left: 90%;
+  }
+  @include notebook-small-height {
+    left: 85%;
+  }
+  @include ultra {
+    left: 90%;
   }
 }
 
 .card-points-second {
   @include tablet {
-    left: 500px;
-    top: 400px;
+    left: -18%;
+    top: 80%;
   }
-}
-
-.card-points-first .card-points-second {
+ @include tablet-small-height {
+   left: -10%;
+ }
   @include notebook {
-    left: 450px;
-    top: -50px;
+    left: -28%;
+  }
+  @include ultra {
+    left: -10%;
   }
 }
 
+//.card-points-first {
+//  @include tablet-plus {
+//    left: 500px;
+//    top: -50px;
+//  }
+//}
+//
+//.card-points-second {
+//  @include tablet-plus {
+//    left: 500px;
+//    top: 400px;
+//  }
+//}
 
+//.card-points-first {
+//  @include notebook {
+//    left: 450px;
+//    top: -50px;
+//  }
+//}
+//
+//.card-points-second {
+//  @include notebook {
+//    left: 450px;
+//    top: 400px;
+//  }
+//}
+
+//.card-points-first {
+//  @include ultra {
+//    left: 500px;
+//    top: -50px;
+//  }
+//}
+//
+//.card-points-second {
+//  @include ultra {
+//    left: 500px;
+//    top: 360px;
+//  }
+//}

@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import List from './components/List'
+import Game from './components/Game'
 import Edit from './components/Edit';
 import Nav from './components/Nav';
 import Start from './components/Start';
@@ -25,8 +25,7 @@ function App() {
           <Start/>
           <Center/>
           {/*<Routes>*/}
-          {/*  <Route exact path="/" element={<List />} />*/}
-          {/*  <Route exact path="/edit/:id" element={<Edit />} />*/}
+          {/*  <Route exact path="/" element={<Game />} />*/}
           {/*</Routes>*/}
       </div>
     </BrowserRouter>

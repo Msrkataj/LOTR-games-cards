@@ -2,8 +2,11 @@
 @import "index.scss";
 @import "settings/mixins";
 @import "center";
+@import "game";
 
-
+body {
+  overflow: hidden;
+}
 .App {
   text-align: center;
   font-family: "ringbearermedium";

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Gandalf",
-      "photo": "https://www.filmweb.pl/character/Gandalf-4",
+      "photo": "https://popbookownik.pl/wp-content/uploads/2019/10/gandalf.png",
       "strong": 40,
       "magic": 90,
       "intelligence": 90,
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "name": "Legolas",
-      "photo": "https://www.filmweb.pl/character/Legolas-46",
+      "photo": "http://3.bp.blogspot.com/-rlM3m54JCPg/URGVf1BqXoI/AAAAAAAAAZ8/fjtTblueDx8/s1600/legolas-1.jpg",
       "strong": 65,
       "magic": 40,
       "intelligence": 90,
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "name": "Gollum",
-      "photo": "https://slangmiejski.pl/tag/golum-slang/",
+      "photo": "https://slangmiejski.pl/wp-content/uploads/2021/09/golum.png",
       "strong": 20,
       "magic": 10,
       "intelligence": 20,
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "name": "Gimli",
-      "photo": "https://www.filmweb.pl/character/Gimli-51",
+      "photo": "https://fwcdn.pl/fcp/18/41/11841/12565.1.jpg",
       "strong": 80,
       "magic": 10,
       "intelligence": 60,
@@ -53,7 +53,7 @@
     {
       "id": 6,
       "name": "Frodo Baggins",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fcp/10/65/1065/12559.1.jpg",
       "strong": 10,
       "magic": 80,
       "intelligence": 70,
@@ -63,7 +63,7 @@
     {
       "id": 7,
       "name": "Thorin",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fcp/22/42/662242/12580.1.jpg",
       "strong": 70,
       "magic": 10,
       "intelligence": 50,
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "name": "Samwise Gamgee",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fph/14/51/31451/448307.2.jpg",
       "strong": 30,
       "magic": 10,
       "intelligence": 50,
@@ -83,7 +83,7 @@
     {
       "id": 9,
       "name": "Galadriela",
-      "photo": "",
+      "photo": "https://fwcdn.pl/cpo/00/93/93/104_1.1.jpg",
       "strong": 20,
       "magic": 80,
       "intelligence": 70,
@@ -93,7 +93,7 @@
     {
       "id": 10,
       "name": "Saruman",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fph/10/65/1065/447312.3.jpg",
       "strong": 30,
       "magic": 80,
       "intelligence": 80,
@@ -103,7 +103,7 @@
     {
       "id": 11,
       "name": "Boromir",
-      "photo": "",
+      "photo": "https://fwcdn.pl/cpo/00/81/81/73.4.jpg",
       "strong": 65,
       "magic": 10,
       "intelligence": 60,
@@ -113,7 +113,7 @@
     {
       "id": 12,
       "name": "Arwena",
-      "photo": "",
+      "photo": "https://ostatniatawerna.pl/wp-content/uploads/2017/09/tauriel.jpg",
       "strong": 30,
       "magic": 80,
       "intelligence": 70,
@@ -123,7 +123,7 @@
     {
       "id": 13,
       "name": "Sauron",
-      "photo": "",
+      "photo": "https://crast.net/img/2022/04/Sauron-an-exceptional-life-size-bust-is-coming.jpg",
       "strong": 90,
       "magic": 90,
       "intelligence": 90,
@@ -132,7 +132,7 @@
     },
     {
       "name": "Thranduil",
-      "photo": "",
+      "photo": "https://fwcdn.pl/cpo/01/07/107/122.4.jpg",
       "strong": 70,
       "magic": 70,
       "intelligence": 70,
@@ -142,7 +142,7 @@
     },
     {
       "name": "Peregrin Tuk",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fph/18/41/11841/448150_1.3.jpg",
       "strong": 20,
       "magic": 10,
       "intelligence": 40,
@@ -152,7 +152,7 @@
     },
     {
       "name": "Elrond",
-      "photo": "",
+      "photo": "http://3.bp.blogspot.com/--dqidJf7_MI/URGeDBbi9nI/AAAAAAAAAb4/J-Ae4mlwjzU/s1600/Elrond_in_Rivendell_-_The_Hobbit.jpg",
       "strong": 80,
       "magic": 90,
       "intelligence": 80,
@@ -162,17 +162,17 @@
     },
     {
       "name": "Smaug",
-      "photo": "",
+      "photo": "https://i.pinimg.com/736x/eb/f2/43/ebf243d17250070a28e14726f0326b3b.jpg",
       "strong": 100,
-      "magic": 50,
-      "intelligence": 50,
+      "magic": 60,
+      "intelligence": 90,
       "luck": 0,
-      "flair": 70,
+      "flair": 80,
       "id": 17
     },
     {
       "name": "Meriadok Brandybuck",
-      "photo": "",
+      "photo": "https://fwcdn.pl/cpo/00/74/74/75.3.jpg",
       "strong": 20,
       "magic": 10,
       "intelligence": 40,
@@ -183,7 +183,7 @@
     {
       "id": 19,
       "name": "Kíli",
-      "photo": "",
+      "photo": "https://i.pinimg.com/originals/13/e5/1b/13e51b7b75539506024e48c8668ad576.png",
       "strong": 60,
       "magic": 20,
       "intelligence": 60,
@@ -193,7 +193,7 @@
     {
       "id": 20,
       "name": "Faramir",
-      "photo": "",
+      "photo": "https://miro.medium.com/max/1400/1*iNqOqBEH2UpbU_ole4mBIw.jpeg",
       "strong": 60,
       "magic": 10,
       "intelligence": 60,
@@ -202,7 +202,7 @@
     },
     {
       "name": "Théoden",
-      "photo": "",
+      "photo": "https://fwcdn.pl/cpo/01/05/105/116.4.jpg",
       "strong": 70,
       "magic": 10,
       "intelligence": 80,
@@ -212,7 +212,7 @@
     },
     {
       "name": "Éomer",
-      "photo": "",
+      "photo": "https://pbs.twimg.com/media/B-9eyGIWkAA0JX5.jpg",
       "strong": 60,
       "magic": 10,
       "intelligence": 50,
@@ -222,7 +222,7 @@
     },
     {
       "name": "Tauriel",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fcp/98/67/469867/13977.1.jpg",
       "strong": 50,
       "magic": 10,
       "intelligence": 70,
@@ -232,7 +232,7 @@
     },
     {
       "name": "Bard",
-      "photo": "",
+      "photo": "https://i.pinimg.com/564x/fe/39/79/fe3979f39c40b9cab1b595cbbedf177b--amazing-people-pretty-people.jpg",
       "strong": 70,
       "magic": 20,
       "intelligence": 70,
@@ -242,7 +242,7 @@
     },
     {
       "name": "Balin",
-      "photo": "",
+      "photo": "https://i.pinimg.com/736x/1d/2a/dd/1d2addcc1b95b10b7897825f8b7dd86b--the-battle-the-hobbit.jpg",
       "strong": 70,
       "magic": 10,
       "intelligence": 60,
@@ -253,17 +253,17 @@
     {
       "id": 26,
       "name": "Radagast",
-      "photo": "",
-      "strong": 60,
-      "magic": 10,
-      "intelligence": 50,
+      "photo": "https://fwcdn.pl/fph/98/67/469867/458192_1.2.jpg",
+      "strong": 30,
+      "magic": 70,
+      "intelligence": 60,
       "luck": 0,
       "flair": 50
     },
     {
       "id": 27,
       "name": "Dwalin",
-      "photo": "",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Fs1x8aKDu_dyLEgUQ4UnbQJIv-NOzhhDdqVoiimehdo80j96aKAP4w_BI6D9JYR1Ehc&usqp=CAU",
       "strong": 70,
       "magic": 10,
       "intelligence": 50,
@@ -272,7 +272,7 @@
     },
     {
       "name": "Fíli",
-      "photo": "",
+      "photo": "https://fwcdn.pl/cpo/01/16/116/171.4.jpg",
       "strong": 60,
       "magic": 10,
       "intelligence": 60,
@@ -282,17 +282,17 @@
     },
     {
       "name": "Bombur",
-      "photo": "",
+      "photo": "https://fwcdn.pl/fcp/32/17/343217/12593.1.jpg",
       "strong": 60,
       "magic": 10,
-      "intelligence": 50,
+      "intelligence": 40,
       "luck": 0,
-      "flair": 60,
+      "flair": 30,
       "id": 29
     },
     {
       "name": "Czarnoksiężnik z Angmaru",
-      "photo": "",
+      "photo": "https://cdn1.naekranie.pl/wp-content/uploads/2017/04/6K7Hgv9h48Jx.jpg",
       "strong": 90,
       "magic": 90,
       "intelligence": 80,
@@ -302,7 +302,7 @@
     },
     {
       "name": "Drzewiec",
-      "photo": "",
+      "photo": "https://www.wykop.pl/cdn/c3201142/comment_zug9mAzm0Cy7EnuJH5MxddRpJElGbXej,w400.jpg",
       "strong": 90,
       "magic": 10,
       "intelligence": 30,
@@ -312,28 +312,28 @@
     },
     {
       "name": "Azog",
-      "photo": "",
-      "strong": 40,
-      "magic": 90,
-      "intelligence": 90,
-      "luck": 0,
-      "flair": 7,
-      "id": 32
-    },
-    {
-      "name": "Ork",
-      "photo": "",
-      "strong": 60,
+      "photo": "https://fwcdn.pl/fph/98/67/469867/434451.2.jpg",
+      "strong": 80,
       "magic": 10,
       "intelligence": 60,
       "luck": 0,
       "flair": 70,
+      "id": 32
+    },
+    {
+      "name": "Ork",
+      "photo": "https://www.gamespot.com/a/uploads/scale_landscape/1603/16030002/3995309-lord-of-the-rings-harvey-weinstein-orc.jpg",
+      "strong": 50,
+      "magic": 10,
+      "intelligence": 30,
+      "luck": 0,
+      "flair": 40,
       "id": 33
     },
     {
       "name": "Troll",
-      "photo": "",
-      "strong": 80,
+      "photo": "https://i.pinimg.com/236x/cb/18/ff/cb18ff907d18d4d4848a08871b1d8b7e--fantasy-creatures-character-art.jpg",
+      "strong": 90,
       "magic": 10,
       "intelligence": 10,
       "luck": 0,
@@ -342,7 +342,7 @@
     },
     {
       "name": "Nazgul",
-      "photo": "",
+      "photo": "https://i1.sndcdn.com/artworks-000095774316-o7lf2a-t500x500.jpg",
       "strong": 80,
       "magic": 80,
       "intelligence": 70,
@@ -352,7 +352,7 @@
     },
     {
       "name": "Mieszkaniec",
-      "photo": "",
+      "photo": "https://static.wikia.nocookie.net/lotr/images/1/1d/Hama.jpg/revision/latest/smart/width/250/height/250?cb=20150415185924&path-prefix=pl",
       "strong": 20,
       "magic": 0,
       "intelligence": 20,
