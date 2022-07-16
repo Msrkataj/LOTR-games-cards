@@ -151,7 +151,7 @@ const Center = () => {
         setOn(prev => true ? false : true)
         setDisabledDraw(prev => false)
         // eslint-disable-next-line no-unused-expressions
-        on === false && counter2 === 1 ? ran() : null
+        on === false && counter2 != 1 ? ran() : null
 
 
         // setsumMagic(prev =>
