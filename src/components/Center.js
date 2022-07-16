@@ -145,7 +145,6 @@ const Center = () => {
     }
 
     const handlefight = () => {
-        // setDisabledFight(on === true ? disabledOn : null || counter === 1 ? disabledOff : null)
         setCounter2(prev => counter2 === 1 ? counter2 === 0 : prev + 1)
 
         setOn(prev => true ? false : true)
@@ -215,10 +214,10 @@ console.log(total2)
                         </div>
                     </div>
                 </div>
-                <button className="fight" onClick={handlefight} disabled={disabledFight}>
+                <button className="fight" onClick={handlefight} disabled={disabledFight} style={disabledDraw === false ? {transform: "scale(0.8)", cursor: "auto"} : null}>
                     <p>WALCZ</p>
                 </button>
-                <button className="center-up-mainCard" onClick={handleDraw} disabled={disabledDraw}>
+                <button className="center-up-mainCard" onClick={handleDraw} disabled={disabledDraw} style={disabledDraw === true ? {transform: "scale(0.8)", cursor: "auto"} : null}>
                     <p>LOSUJ</p>
                 </button>
             </div>
