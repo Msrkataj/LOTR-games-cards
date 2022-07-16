@@ -13,11 +13,11 @@
   position: absolute;
   top: 10%;
   left: 10%;
-  font-size: 1.5rem;
+  font-size: 2.3vh;
   display: flex;
   flex-direction: column;
   z-index: 3;
-
+  font-family: "Font Awesome 6 Free";
   .box {
     width: 0;
     height: 100%;
@@ -38,9 +38,11 @@
   .start-text {
     padding: 30px 40px;
 
+
     h1 {
       font-size: 40px;
       margin-bottom: 20px;
+      font-family: ringbearermedium;
     }
 
     a {

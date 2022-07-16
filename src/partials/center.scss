@@ -52,7 +52,7 @@
     background: none;
     backdrop-filter: blur(10px);
     filter: brightness(125%);
-    padding-top: 8px;
+    padding-top: 4px;
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -71,9 +71,10 @@
 
     @include notebook {
       width: 25vw;
-      height: 20vh;
+      height: 24vh;
       margin-right: 100px;
     }
+
     @include ultra {
       width: 15vw;
     }
@@ -86,6 +87,9 @@
       @include mobile-plus {
         font-size: 1.8rem;
       }
+      @include mobile-mini {
+        font-size: 1.5vh;
+      }
     }
 
     .center-up-statistic-main {
@@ -97,8 +101,25 @@
 
       .stats ul li {
         margin-top: 0.7vh;
+        @include height-mini{
+          font-size: 2vh;
+        }
         @include notebook {
           margin-top: 1.4vh;
+        }
+        @include mobile-mini {
+          font-size: 1.2vh;
+        }
+        b {
+          font-weight: bold;
+          margin-left: 10px;
+          font-size: 1.6vh;
+          @include height-mini{
+            font-size: 2.2vh;
+          }
+          @include notebook {
+            margin-top: 1.6vh;
+          }
         }
       }
       .draw {
@@ -132,8 +153,8 @@
   background-position: center;
   cursor: pointer;
   animation: pulseRed 2s infinite alternate;
-  position: relative;
   transition: 0.5s;
+  position: relative;
 
     p {
       transition: 0s;
@@ -292,12 +313,20 @@
   .sum {
     width: 15%;
     height: 15%;
-    top: 20%;
-    left: 30%;
-    font-size: 3vh;
+    top: 5%;
+    left: 18%;
+    font-size: 2.5vh;
     position: absolute;
     color: #eeeeee;
     z-index: 6;
+    border-radius: 50%;
+    @include mobile-plus {
+      left: 25%;
+    }
+    @include tablet {
+      left: 30%;
+    }
+
   }
   p {
     font-family: ringbearermedium;

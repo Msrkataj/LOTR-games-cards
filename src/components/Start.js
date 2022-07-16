@@ -17,14 +17,23 @@ const Start = () => {
             </span>
             <div className="start-text">
             <h1>Witaj</h1>
-            <p>Znajdujesz się w gierce symulacyjnej z bohaterami z uniwersum Lord of the Rings, gra została stworzona na podstawie popularnej gry karcjanej "Wojna"
+            <p>
+                Przedstawiony projekt jest gierką symulacyjną z bohaterami z uniwersum Lord of the Rings.
                 </p>
             <p>
                 <br/>
+                Gra posiada 36 kart z postaciami z LOTR, każdy bohater posiada Swoja specyfikacje sily, magi, madrosci, szczescia oraz sprytu. <br/>
                 <br/>
-                Gra posiada "" kart z postaciami z LOTR, każdy bohater posiada specyfikację sily, madrosci, zwinności, szczescia. <br/>Przed kazda tura, nastepuje losowanie
-                w ilu procentach będą dzialały specyfikacje bohatera. <br/>Nastepnie gracz A losuje kartę ze stosu kart, nastepnie robi to samo gracz B, nastepuje walka,
-                po stoczonej walce, zwyciezca zgarnia pule kart</p>
+                Po nacisnieciu przycisku "LOSUJ",
+                zostaje rozlosowana pierwsza karta dla gracza NR1, po kolejnym wcisnieciu zostaje rozlosowana pierwsza karta dla gracza NR2, nastepnie po nacisnieciu przycisku "WALCZ", zostaje rozegrana potyczka miedzy dwoma herosami.
+                <br/>
+                <br/>
+                Przed kazda bitwa rozlosowane sa warunki potyczki tzn. ile procent danej spefikacji bierze udzial w walce, kazda bitwa nie będzie taka sama. Po zakonczonej walce sa podliczone zdobyte punkty danej walki i podliczony punkt
+                dla gracza wygranego.
+                <br/>
+                <br/>
+                Milej zabawy
+            </p>
             <a onClick={handleClick}>
                 <FontAwesomeIcon icon="fas fa-ring" />
                 <span>
