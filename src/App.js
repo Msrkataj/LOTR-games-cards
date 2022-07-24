@@ -19,7 +19,6 @@ function App() {
         <div className="background">
         </div>
       <div className="App">
-
           <Start/>
           <Center/>
       </div>

@@ -1,17 +1,26 @@
 .logo-section {
-  display: flex;
-  justify-content: flex-end;
 
-  .logo {
-    background-image: url("../assets/LOTR cards.png");
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    margin: 10px;
-    position: absolute;
-    @include notebook {
-      width: 200px;
-      height: 200px;
+  .logo-section-down {
+    display: flex;
+    justify-content: flex-end;
+
+    .name {
+      font-size: 1.5rem;
+      margin: 10px;
+
+    }
+
+    .logo {
+      background-image: url("../assets/LOTR cards.png");
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+      margin: 10px;
+      position: absolute;
+      @include notebook {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }

@@ -5,14 +5,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Start = () => {
 
-    const [isActive, setActive] = useState(true);
+    const [isActive, setActive] = useState(() => {
+        // getting stored value
+        const saved = localStorage.getItem("active");
+        const initialValue = JSON.parse(saved);
+        return initialValue || false;
+    });
+
+    const [name, setName] = useState(() => {
+        // getting stored value
+        const saved = localStorage.getItem("name");
+        const initialValue = JSON.parse(saved);
+        return initialValue || "";
+    });
+
+    useEffect(() => {
+        // storing input name
+        localStorage.setItem("name", JSON.stringify(name));
+
+    }, [name]);
+
+    useEffect(() => {
+        // storing input name
+        localStorage.setItem("active", JSON.stringify(isActive));
+    }, [isActive]);
+
+    const saved = localStorage.getItem("active");
+
 
     const handleClick = () => {
-        setActive(!isActive);
+        setActive(prev => true)
     };
 
     return (
-        <div className={isActive ? 'start': "start2"}>
+        <>
+        <div className="name">{isActive === true ? name : null}</div>
+    <div className={isActive  === true ? "start2" : "start"}>
             <span className="box">
             </span>
             <div className="start-text">
@@ -34,16 +62,26 @@ const Start = () => {
                 <br/>
                 Milej zabawy
             </p>
-            <a onClick={handleClick}>
-                <FontAwesomeIcon icon="fas fa-ring" />
-                <span>
+                <form>
+                    <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Podaj Swoją Nazwę"
+                        aria-label="fullname"
+                    />
+                    <a onClick={handleClick}>
+                        <FontAwesomeIcon icon="fas fa-ring" />
+                        <span>
                 </span>
-                <p>START!</p>
-            </a>
+                        <p>START!</p>
+                    </a>
+                </form>
             </div>
             <div className="box box-2">
             </div>
         </div>
+        </>
     )
 }
 
