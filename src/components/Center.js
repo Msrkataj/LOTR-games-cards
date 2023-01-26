@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useReducer} from 'react';
+import React, {useState, useEffect} from 'react';
 import Game, {API} from "./Game";
 import Game2 from "./game2";
-import {number2} from "./game2";
+// import {number2} from "./game2";
 import { useLocalStorage } from "./game2";
 
 const Center = () => {
@@ -41,7 +41,7 @@ const Center = () => {
         const initialValue = JSON.parse(saved);
         return initialValue || "";
     });
-    const [disabledFight, setDisabledFight] = useState(() => {
+    const [disabledFight] = useState(() => {
         // getting stored value
         const saved = localStorage.getItem("disabledFight");
         const initialValue = JSON.parse(saved);
@@ -67,23 +67,23 @@ const Center = () => {
         return initialValue || false;
     });
 
-    const [sumStrong, setsumStrong] = useState("")
-    const [sumMagic, setsumMagic] = useState("")
-    const [sumIntelligence, setsumIntelligence] = useState("")
-    const [sumLucky, setsumLucky] = useState("")
-    const [sumFlair, setsumFlair] = useState("")
-
-    const [sumStrong2, setsumStrong2] = useState("")
-    const [sumMagic2, setsumMagic2] = useState("")
-    const [sumIntelligence2, setsumIntelligence2] = useState("")
-    const [sumLucky2, setsumLucky2] = useState("")
-    const [sumFlair2, setsumFlair2] = useState("")
-
-
-    const [sumHeros, setsumHeros] = useState("")
-    const [sumHeros2, setsumHeros2] = useState("")
-
-    const [ID, setID] = useState("")
+    // const [sumStrong, setsumStrong] = useState("")
+    // const [sumMagic, setsumMagic] = useState("")
+    // const [sumIntelligence, setsumIntelligence] = useState("")
+    // const [sumLucky, setsumLucky] = useState("")
+    // const [sumFlair, setsumFlair] = useState("")
+    //
+    // const [sumStrong2, setsumStrong2] = useState("")
+    // const [sumMagic2, setsumMagic2] = useState("")
+    // const [sumIntelligence2, setsumIntelligence2] = useState("")
+    // const [sumLucky2, setsumLucky2] = useState("")
+    // const [sumFlair2, setsumFlair2] = useState("")
+    //
+    //
+    // const [sumHeros, setsumHeros] = useState("")
+    // const [sumHeros2, setsumHeros2] = useState("")
+    //
+    // const [ID, setID] = useState("")
 
     const [Win, setWin] = useState(() => {
         // getting stored value
@@ -99,8 +99,8 @@ const Center = () => {
         return initialValue || false;
     });
 
-    let disabledOn = true
-    let disabledOff = false
+    // let disabledOn = true
+    // let disabledOff = false
 
 
     const [hero, setHero] = useState(() => {
@@ -137,28 +137,28 @@ const Center = () => {
         return initialValue || "";
     });
 
-    const number3 = () => {
-        const number = (Math.floor(Math.random() * (36 - 1)) + 1)
-        return number
-    }
+    // const number3 = () => {
+    //     const number = (Math.floor(Math.random() * (36 - 1)) + 1)
+    //     return number
+    // }
 
 
 
-    const number4 = () => {
-        while (true) {
-            const newRand = Math.floor(Math.random() * (36 + 1));
-            if (key.forEach(el => el) !== newRand) {
-                return newRand;
-            }
-        }
-    }
+    // const number4 = () => {
+    //     while (true) {
+    //         const newRand = Math.floor(Math.random() * (36 + 1));
+    //         if (key.forEach(el => el) !== newRand) {
+    //             return newRand;
+    //         }
+    //     }
+    // }
 
 
     console.log(key)
     //
     // const dpp = key.forEach(el => el)
     //
-    console.log(number4())
+    // console.log(number4())
     //
     // console.log(dpp)
 
@@ -234,7 +234,7 @@ const Center = () => {
     const luckHero2  = ((randomHappy * hero2.luck) /100)
     const flairHero2  = ((randomThief * hero2.flair) /100)
 
-    const [name2, setName2] = useLocalStorage("hero2", "");
+    const [name2] = useLocalStorage("hero2", "");
 
     console.log(name2.name)
 
@@ -267,7 +267,7 @@ const Center = () => {
         localStorage.setItem("Win", JSON.stringify(Win));
         localStorage.setItem("Win2", JSON.stringify(Win2));
 
-    }, [randomStrong, randomMagic, randomIntelligence, randomHappy, randomThief, counter, counter2, disabledFight, disabledDraw]);
+    }, [randomStrong, randomMagic, randomIntelligence, randomHappy, randomThief, counter, counter2, disabledFight, disabledDraw, Win, Win2]);
 
     const handlefight = () => {
         setCounter2(prev => counter2 === 1 ? counter2 === 0 : prev + 1)
@@ -275,7 +275,7 @@ const Center = () => {
         setOn(prev => true ? false : true)
         setDisabledDraw(prev => false)
         // eslint-disable-next-line no-unused-expressions
-        on === false && counter2 != 1 ? ran() : null
+        on === false && counter2 !== 1 ? ran() : null
 
         // setsumMagic(prev =>
         //     randomMagic * hero.magic / 100)
@@ -320,15 +320,15 @@ console.log(total2)
             </div>
             <div className="center-up">
                 <div className="center-up-statistic">
-                    <h1>Grajace statystyki</h1>
+                    <h1>Playing stats:</h1>
                     <div className="center-up-statistic-main">
                         <div className="stats">
                             <ul>
-                                <li>Sila:<b>{randomStrong}</b></li>
-                                <li>Magia:<b>{randomMagic}</b></li>
-                                <li>Madrosc:<b>{randomIntelligence}</b></li>
-                                <li>Szczescie:<b>{randomHappy}</b></li>
-                                <li>Spryt:<b>{randomThief}</b></li>
+                                <li>Strong:<b>{randomStrong}</b></li>
+                                <li>Magic:<b>{randomMagic}</b></li>
+                                <li>Intelligence:<b>{randomIntelligence}</b></li>
+                                <li>Luck:<b>{randomHappy}</b></li>
+                                <li>Flair:<b>{randomThief}</b></li>
                             </ul>
                         </div>
                         <div className="draw">
@@ -337,10 +337,10 @@ console.log(total2)
                     </div>
                 </div>
                 <button className="fight" onClick={handlefight} disabled={disabledFight} style={disabledDraw === false ? {transform: "scale(0.8)", cursor: "auto"} : null}>
-                    <p>WALCZ</p>
+                    <p>BATTLE</p>
                 </button>
                 <button className="center-up-mainCard" onClick={handleDraw} disabled={disabledDraw} style={disabledDraw === true ? {transform: "scale(0.8)", cursor: "auto"} : null}>
-                    <p>LOSUJ</p>
+                    <p>DRAW</p>
                 </button>
             </div>
             <div className="content">

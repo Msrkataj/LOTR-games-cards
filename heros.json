@@ -14,7 +14,7 @@
       "id": 2,
       "name": "Aragorn",
       "photo": "https://fwcdn.pl/cpo/00/33/33/32.4.jpg",
-      "strong": 70,
+      "strong": 85,
       "magic": 10,
       "intelligence": 90,
       "luck": 30,
@@ -85,8 +85,8 @@
       "name": "Galadriela",
       "photo": "https://fwcdn.pl/cpo/00/93/93/104_1.1.jpg",
       "strong": 20,
-      "magic": 80,
-      "intelligence": 70,
+      "magic": 100,
+      "intelligence": 90,
       "luck": 30,
       "flair": 60
     },
@@ -359,6 +359,16 @@
       "luck": 30,
       "flair": 60,
       "id": 36
+    },
+    {
+      "name": "DG z Jozefowa",
+      "photo": "https://zapodaj.net/images/e44a08deaf0da.jpg",
+      "strong": 90,
+      "magic": 0,
+      "intelligence": 1,
+      "luck": 100,
+      "flair": 100,
+      "id": 37
     }
   ]
 }

@@ -42,12 +42,12 @@ const Game = ({num}) => {
 
     useEffect(() => {
         getDraw()
-    }, [])
+    }, )
 
 
     const [name, setName] = useLocalStorage("hero", "");
 
-    console.log()
+    console.log(setName)
 
     return (
         <>
@@ -59,12 +59,12 @@ const Game = ({num}) => {
                 </section>
                 <div className="card-stats">
                     <ul>
-                        <li>Sila:<b>{name.strong}</b></li>
-                        <li>Magia:<b>{name.magic}</b></li>
-                        <li>Madrosc:<b>{name.intelligence}</b></li>
-                        <li>Szczescie:<b>{name.luck}</b></li>
-                        <li>Spryt:<b>{name.flair}</b></li>
-                                </ul>
+                        <li>Strong:<b>{name.strong}</b></li>
+                        <li>Magic:<b>{name.magic}</b></li>
+                        <li>Intelligence:<b>{name.intelligence}</b></li>
+                        <li>Luck:<b>{name.luck}</b></li>
+                        <li>Flair:<b>{name.flair}</b></li>
+                    </ul>
                 </div>
             </div>
         </>

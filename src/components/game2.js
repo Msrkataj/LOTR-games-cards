@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import {API, number1} from "./Game";
+import {API} from "./Game";
 
 function getStorageValue(hero2, defaultValue) {
     // getting stored value
@@ -41,9 +41,10 @@ const Game2 = ({num}) => {
 
     useEffect(() => {
         getDraw()
-    }, [])
+    }, )
 
-    const [Game2hero, setGame2hero] = useLocalStorage("hero2", "");
+    const [Game2hero] = useLocalStorage("hero2", "");
+
 
     return (
         <>
@@ -55,11 +56,11 @@ const Game2 = ({num}) => {
                 </section>
                 <div className="card-stats">
                     <ul>
-                        <li>Sila:<b>{Game2hero.strong}</b></li>
-                        <li>Magia:<b>{Game2hero.magic}</b></li>
-                        <li>Madrosc:<b>{Game2hero.intelligence}</b></li>
-                        <li>Szczescie:<b>{Game2hero.luck}</b></li>
-                        <li>Spryt:<b>{Game2hero.flair}</b></li>
+                        <li>Strong:<b>{Game2hero.strong}</b></li>
+                        <li>Magic:<b>{Game2hero.magic}</b></li>
+                        <li>Intelligence:<b>{Game2hero.intelligence}</b></li>
+                        <li>Luck:<b>{Game2hero.luck}</b></li>
+                        <li>Flair:<b>{Game2hero.flair}</b></li>
                     </ul>
                 </div>
             </div>
