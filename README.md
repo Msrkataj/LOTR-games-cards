@@ -8,11 +8,12 @@ It was using laungauge SASS and page is full responsive.
 After launching game, dispalyed is a message about the rules of the game and a request to enter the nickname of the perosn playning, 
 which is saved in localStorage React with the progress in the game, so that after refreshing the page, the game dosn't reset.
 The game has 36 charakters cards with stats:<br/>
--- strenght<br/>
--- magic<br/>
--- inteligence<br/>
--- luck<br/>
--- flair<br/>
+- strenght<br/>
+- magic<br/>
+- inteligence<br/>
+- luck<br/>
+- flair<br/>
+
 Before each turn played, the percentage share of each of the statistics of a given character is drawn, 
 so that each game is different and weaker heroes also have a chance to win against with stronger heroes.
 A fight ensues, the one who collects more points, win this round and collets point on this account.
@@ -20,13 +21,13 @@ the game works on the principle of simulation.
 
 **The project is not full finished, but is constantly being created, repaired and improved...**
 
-Gamed started: 
+## Gamed started: 
 
 ```
 npm run start
 ```
 
-DataBase:
+## DataBase:
 
 ```
 json-server --port 3005 --watch heros.json
