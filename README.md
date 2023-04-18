@@ -1,6 +1,6 @@
 <a href='https://postimg.cc/rzW08djb' target='_blank'><img src='https://i.postimg.cc/rzW08djb/LOTR-cards-mod.png' border='0' alt='LOTR-cards-mod'/></a>
 
-This is my second project, it a card game with heroses from Lord Of The Rings.
+This is my second project, it a card game with heroses from Lord Of The Rings..
 Project is my own, based on framework React, using JSON Server database, local storage React. 
 It was using laungauge SASS and page is full responsive.
 
